@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Summarizer for Liferay – Installation & Usage Guide</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #004b8d;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffecb5;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d1e7dd;
+            border-left: 4px solid #badbcc;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        ul {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI Summarizer for Liferay</h1>
+    <p>
+        The <strong>AI Summarizer for Liferay</strong> enhances the Document Library by providing AI-generated summaries for documents with a single click.
+        Once installed, a new <strong>“Summarize”</strong> button becomes available in the document detail screen, allowing users to request a summary in the background and retrieve it moments later via a popup.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li>One-click document summarization directly inside the Document Library</li>
+        <li>Background processing for optimal user experience</li>
+        <li>AI-agnostic integration: choose your AI provider</li>
+        <li>Supports SaaS, PaaS, and on-premise Liferay deployments</li>
+    </ul>
+
+    <h2>Included Liferay Client Extensions</h2>
+    <p>This app is delivered as a set of Liferay Client Extensions:</p>
+    <ul>
+        <li><code>slemarchand-aisummarizer-batch.zip</code></li>
+        <li><code>slemarchand-aisummarizer-custom-element.zip</code></li>
+        <li><code>slemarchand-aisummarizer-etc-service.zip</code></li>
+        <li><code>slemarchand-aisummarizer-global-js.zip</code></li>
+    </ul>
+
+    <div class="note">
+        <strong>Important:</strong> The following Feature Flags must be enabled:
+        <ul>
+            <li><strong>LPD-30371</strong> – Global JavaScript Client Extensions</li>
+            <li><strong>LPD-48862</strong> – OAuth2 JavaScript Client</li>
+        </ul>
+    </div>
+
+    <h2>Supported AI Providers</h2>
+    <p>You can choose your preferred AI provider at configuration time:</p>
+    <ul>
+        <li>OpenAI</li>
+        <li>Google Gemini</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ol>
+        <li>Download the application package from the Liferay Marketplace.</li>
+        <li>Navigate to <strong>Control Panel → Apps → App Manager</strong>.</li>
+        <li>Upload and deploy the provided Client Extensions or install via Marketplace deployment.</li>
+        <li>Ensure the required Feature Flags are enabled (see above).</li>
+    </ol>
+
+    <h2>Configuration</h2>
+    <p>Once installed, configure the app:</p>
+    <ol>
+        <li>Go to <strong>Control Panel → AI Summarizer Settings</strong>.</li>
+        <li>Select your desired AI provider (OpenAI or Google Gemini).</li>
+        <li>Provide the appropriate API Key and configuration values.</li>
+        <li>Save the configuration.</li>
+    </ol>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Open the <strong>Document Library</strong> and navigate to a document.</li>
+        <li>Click on the document to view its detail page.</li>
+        <li>Click the <strong>“Summarize”</strong> button.</li>
+        <li>The summary will be generated in the background.</li>
+        <li>Once ready, the button changes to <strong>“Show Summary”</strong>.</li>
+        <li>Click it to display the summary in a pop-up.</li>
+    </ol>
+
+    <div class="success">
+        ✅ <strong>Tip:</strong> Summaries may vary depending on the AI model and the document type. You may switch AI providers anytime through the app configuration.
+    </div>
+
+    <h2>Compatibility</h2>
+    <p>This application is compatible with:</p>
+    <ul>
+        <li>Liferay SaaS</li>
+        <li>Liferay PaaS</li>
+        <li>Liferay Self-Hosted / On-Premise</li>
+    </ul>
+
+    <h2>Support</h2>
+    <p>
+        For assistance, updates, or feature requests, please contact the application publisher through the Liferay Marketplace support channel.
+    </p>
+
+</body>
+</html>
